@@ -100,8 +100,12 @@ int isValid(int response, char numbers[]){
     }
     
     else{
-        return response;
+        if(response > 9 || response < 1){
+        checkResponse(response, numbers);
+        }
+        
     }
+    return response;
 }
 
 int checkWin(char numbers[], int status){
