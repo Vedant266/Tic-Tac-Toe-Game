@@ -83,6 +83,10 @@ int checkResponse(int response){
         checkResponse(response);
     }
     else{
+        if(numbers[response - 1] == 'X' || numbers[response - 1] == 'O'){
+        isValid(response, numbers);
+        }
+ 
         return response;
     }
 }
